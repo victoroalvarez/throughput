@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Throughput Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="app" ng-controller="MainController as main">
+    <div>
+      <label id="input-label">Enter Mega Bit rate:</label>
+      <input id="input" type="number" ng-model="main.num1" /><br />
+      <hr />
+      <div>
+        <span id="output-label">Mega Byte rate: </span>
+        <span id="output">{{main.num1 / main.num2}}</span>
+      </div>
+    </div>
+  </body>
+</html>
