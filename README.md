@@ -1,1 +1,1 @@
-# todo-angular
+# throughput calculator with Angularjs
